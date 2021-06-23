@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.view.View;
 import android.view.animation.AnimationUtils;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 import java.io.Serializable;
@@ -60,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
       vibrator.vibrate(70);
       e.setError(s);
       e.requestFocus();
+      InputMethodManager inputMethodManager= (InputMethodManager) this.getSystemService(this.INPUT_METHOD_SERVICE);
+      inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
    }
 
    private void reset() {
