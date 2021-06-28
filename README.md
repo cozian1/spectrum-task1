@@ -1,7 +1,8 @@
 # spectrum-task1
 1st task by spectrum
 
-##Video
+*Video
+
 ![Video Link](2021_06_28_23_50_58_trim.mp4)
 
 drive link to the apk file
